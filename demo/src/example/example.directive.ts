@@ -38,7 +38,7 @@ namespace Demo {
     aceLoaded(editor: AceAjax.Editor) {
       editor.setReadOnly(true);
       editor.getSession().setUseWorker(false);
-      editor.setFontSize(14);
+      editor.setFontSize('14px');
       editor.setShowFoldWidgets(false);
       editor.setShowPrintMargin(false);
       editor.setHighlightActiveLine(false);

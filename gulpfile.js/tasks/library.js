@@ -33,7 +33,7 @@ gulp.task('compile:lib', function () {
         }))
         .pipe(sourcemaps.init())
       ])
-      .pipe(order(['**/*', 'template*']))
+      .pipe(order(['module.js', '**/*', 'template*']))
       .pipe(concat('angular-win.js'))
       .pipe(uglify({ mangle: true, compress: true }))
       .pipe(sourcemaps.write('.'))

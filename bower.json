@@ -17,10 +17,8 @@
     "angular": "~1.4.5"
   },
   "overrides": {
-    "bootstrap-sass": {
-      "main": [
-        "scss/*"
-      ]
+    "bootstrap": {
+      "main": []
     },
     "ace-builds": {
       "main": [
