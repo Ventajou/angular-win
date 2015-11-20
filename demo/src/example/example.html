@@ -1,0 +1,29 @@
+<h3>{{:: vm.title}}</h3>
+<hr>
+<div class="row">
+  <div class="col-sm-8">
+    <p ng-repeat="paragraph in vm.description">
+      {{:: paragraph}}
+    </p>
+  </div>
+  <div class="col-sm-4" ng-include="vm.include">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <ul class="col-md-12 nav nav-tabs">
+      <li ng-repeat="file in vm.files" class="nav-item">
+        <a class="nav-link"
+          ng-click="vm.selectFile(file.mode)"
+          ng-class="{active: file.mode == vm.selectedFile}">{{:: file.name}}</a>
+      </li>
+    </ul>
+    <div class="col-md-12 editor-container">
+      <div ui-ace="{mode: file.mode, onLoad: vm.aceLoaded}"
+          ng-repeat="file in vm.files"
+          ng-model="file.content"
+          ng-if="file.mode == vm.selectedFile">
+      </div>
+    </div>
+  </div>
+</div>

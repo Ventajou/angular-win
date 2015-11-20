@@ -1,0 +1,7 @@
+{
+  "title": "Adding Buttons",
+  "description": [
+    "You can add up to 3 actions to your notifications. This will show up as buttons but the official documentation warns this could be different in the future, for example using voce recognition.",
+    "Using buttons allow you to provide a value that will be available when handling the notification's activation event. By making the value unique, you can then handle actions pertaining to a specific item in your application."
+  ]
+}

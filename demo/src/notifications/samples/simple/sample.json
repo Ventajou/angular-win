@@ -1,0 +1,7 @@
+{
+  "title": "Simple Notification",
+  "description": [
+    "A simple notification needs no more than a title and a message.",
+    "However, when the user clicks on it there is no way to distinguish it from other notifications. So it's only possible to detect that a notification was clicked but not which one."
+  ]
+}

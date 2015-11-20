@@ -1,0 +1,41 @@
+{
+  "name": "hwa",
+  "version": "0.0.0",
+  "authors": [
+    "André Rieussec <andre@ventajou.com>"
+  ],
+  "description": "Easily add support for Windows 10 Hosted Web Application (aka. project Westminster) features in your Angular application.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "scss/*"
+      ]
+    },
+    "ace-builds": {
+      "main": [
+        "src-min-noconflict/ace.js",
+        "src-min-noconflict/mode-xml.js",
+        "src-min-noconflict/mode-html.js",
+        "src-min-noconflict/mode-typescript.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "bootstrap": "rightscale-design/bootstrap#v4-designkit",
+    "angular-ui-router": "~0.2.15",
+    "lodash": "~3.10.1",
+    "angular-cache": "~4.4.2",
+    "angular-ui-ace": "bower"
+  }
+}

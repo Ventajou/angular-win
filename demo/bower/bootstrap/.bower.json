@@ -1,0 +1,43 @@
+{
+  "name": "bootstrap",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "keywords": [
+    "css",
+    "js",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "http://getbootstrap.com",
+  "license": "MIT",
+  "moduleType": "globals",
+  "main": [
+    "scss/bootstrap.scss",
+    "dist/js/bootstrap.js"
+  ],
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests",
+    "test-infra"
+  ],
+  "dependencies": {
+    "jquery": "2"
+  },
+  "_release": "291172571c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "v4-designkit",
+    "commit": "291172571cbae83fa9587cdeafa98f4b7dcc2ffb"
+  },
+  "_source": "git://github.com/rightscale-design/bootstrap.git",
+  "_target": "v4-designkit",
+  "_originalSource": "rightscale-design/bootstrap"
+}

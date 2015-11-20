@@ -1,0 +1,9 @@
+<div ng-controller="Notification.Input as vm">
+  <button class="btn btn-primary btn-block" ng-click="vm.notify()">Try it!</button>
+  <div ng-show="vm.feedback">
+    <br />
+    <div class="alert alert-info">
+      {{vm.feedback}}
+    </div>
+  </div>
+</div>

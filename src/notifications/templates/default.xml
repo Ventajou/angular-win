@@ -1,0 +1,26 @@
+<toast>
+  <visual>
+    <binding template="ToastGeneric">
+      <text>${ toast.title }</text>
+      <text>${ toast.message }</text>
+    </binding>
+  </visual>
+  <% if (toast.actions || toast.inputs) { %>
+  <actions>
+    <% _.forEach(toast.inputs, function(input) { %>
+      <% if (input.options) { %>
+    <input id="<%= input.id %>" type="selection">
+        <% _.forEach(input.options, function(option) { %>
+      <selection id="<%= option.id %>" content="<%= option.label %>" />
+        <% }) %>
+    </input>
+      <% } else { %>
+    <input id="<%= input.id %>" type="text" />
+      <% } %>
+    <% }) %>
+    <% _.forEach(toast.actions, function(action) { %>
+      <action content="<%= action.label %>" arguments="<%= action.value %>" />
+    <% }) %>
+  </actions>
+  <% } %>
+</toast>

@@ -1,0 +1,7 @@
+{
+  "title": "Custom application tile",
+  "description": [
+    "Tile updates are entirely customizable using XML templates.",
+    "Here we show an example of what can be done."
+  ]
+}

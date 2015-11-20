@@ -1,0 +1,6 @@
+{
+  "title": "Text Input",
+  "description": [
+    "You can also request user input by adding a text box. The value provided by the user will be available to the application in the activation event."
+  ]
+}

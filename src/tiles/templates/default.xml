@@ -1,0 +1,12 @@
+<tile>
+  <visual branding="nameAndLogo">
+
+    <% _.forEach(['TileSmall','TileMedium','TileWide','TileLarge'], function(size) { %> 
+    <binding template="<%= size %>">
+      <text hint-wrap="true" hint-style="base"><%= tile.title %></text>
+      <text hint-wrap="true" hint-style="captionSubtle"><%= tile.text %></text>
+    </binding>
+    <% }); %>
+ 
+  </visual>
+</tile>

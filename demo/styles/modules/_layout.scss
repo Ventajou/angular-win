@@ -1,0 +1,141 @@
+/*
+ * Base structure
+ */
+
+html, body {
+  height: 100%;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 0 20px 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    -webkit-box-shadow: inset -2px 0 0 rgba(0,0,0,.05);
+            box-shadow: inset -2px 0 0 rgba(0,0,0,.05);
+    background-color: #dadee3;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(90%, #dadee3), to(#d4d9de));
+    background-image: -webkit-linear-gradient(left, #dadee3 90%, #d4d9de);
+    background-image: -o-linear-gradient(left, #dadee3 90%, #d4d9de);
+    background-image: linear-gradient(to right,#dadee3 90%,#d4d9de);
+    border-right: 1px solid #97A2B1;
+  }
+
+.sidebar:after {
+  content: " ";
+  height: 100%;
+  width: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(0,0,0,.05)));
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0,0,0,.05));
+  background-image: -o-linear-gradient(left, transparent, rgba(0,0,0,.05));
+  background-image: linear-gradient(to right,transparent,rgba(0,0,0,.05));
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+  display: block;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  color: #30373c;
+  font-weight: 700;
+}
+
+.nav-sidebar > li > a:hover,
+.nav-sidebar > li > a:focus {
+  background-color: rgba(0,0,0,.15);
+  text-decoration: none;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 80px 20px 20px 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.page-header {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 30px 20px 20px 20px;
+}
+@media (min-width: 768px) {
+  .page-header {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}

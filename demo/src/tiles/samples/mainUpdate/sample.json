@@ -1,0 +1,7 @@
+{
+  "title": "Updating the Application's tile",
+  "description": [
+    "If the user has pinned the application to the start menu, you can push updates to the tile.",
+    "A simple template allows us to specify a title and text for our update."
+  ]
+}
